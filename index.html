@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{display: flex; flex-direction: column; align-items: center;}
+    .flex{padding: 1% 0 0; width: 70%; display: flex; flex-direction: column; align-items: center;}
+    .flex>*{margin: 1% 0;}
+    .score{text-align:center; width: 50%; display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 5%;}
+    .score>*{min-width: 33%;}
+    button{width: 30%;}
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <script src="js.js"></script>
+    <div class="flex">
+            <div class="score">
+                <div>
+                    You
+                    <p id="player-score">0</p>
+                </div>
+                <p>-</p>
+                <div>
+                    Computer
+                    <p id="computer-score">0</p>
+                </div>
+            </div>
+            <h3 class="result">Press any button to start the game</h3>
+            <h2>Make your move:</h2>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+    </div>
 </body>
+<script src="js.js"></script>
 </html>
